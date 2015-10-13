@@ -13,8 +13,8 @@ The SymHelp log files (.sdbz files) are written to a static path, which makes re
     - Click *Policies*
     - Click *Host Integrity*
     - Click *Import a Host Integrity Policy*
-- Create the group **My Company\SymHelp Collect** and apply the policy named **SymHelp Collect** to it
-- Create the group **My Company\SymHelp Reset** and apply the policy named **SymHelp Reset** to it
+- Create the group **My Company\SymHelp Collect**, disable policy inheritance, and apply the policy named **SymHelp Collect** to it
+- Create the group **My Company\SymHelp Reset**, disable policy inheritance, and apply the policy named **SymHelp Reset** to it
 
 ##  Remotely creating a SymHelp log
 - To create a SymHelp log on a SEP client, move the client into the group **My Company\SymHelp Collect**
