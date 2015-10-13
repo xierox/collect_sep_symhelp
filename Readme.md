@@ -13,11 +13,11 @@ The SymHelp log files (.sdbz files) are written to a static path, which makes re
     - Click *Policies*
     - Click *Host Integrity*
     - Click *Import a Host Integrity Policy*
-- Create the group: **My Company\SymHelp Collect** and apply the policy named **SymHelp Collect** to it
-- Create the group: **My Company\SymHelp Reset** and apply the policy named **SymHelp Reset** to it
+- Create the group **My Company\SymHelp Collect** and apply the policy named **SymHelp Collect** to it
+- Create the group **My Company\SymHelp Reset** and apply the policy named **SymHelp Reset** to it
 
 ##  Remotely creating a SymHelp log
-- To create a SymHelp log on a SEP client, move the client into the group: **My Company\SymHelp Collect**
+- To create a SymHelp log on a SEP client, move the client into the group **My Company\SymHelp Collect**
 - Shortly after the client heartbeats into the SEPM and picks up the new policy, it will create one SymHelp log. The SymHelp log file (.sdbz) is written to: **C:\WINDOWS\TEMP\symhelphi**
 
 **Note:** These policies have logic in them to prevent a SymHelp log from being created on every HI check. If you need to gather a second or third SymHelp log, you must reset the SEP client first. See steps below.
@@ -25,7 +25,7 @@ The SymHelp log files (.sdbz files) are written to a static path, which makes re
 ##  Resetting the SEP client
 Before these HI policies can be used to gather more than one SymHelp log, you must first reset the client using the steps below.
 
-- Move the client to the group: **My Company\SymHelp Reset**
+- Move the client to the group **My Company\SymHelp Reset**
 - Shortly after the client heartbeats into the SEPM and picks up the new policy, it will reset its state. You can then move the client back into the other group to create another SymHelp log.
 
 ##  Tips
