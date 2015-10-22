@@ -1,10 +1,11 @@
 ## About
-These Symantec Endpoint Protection (SEP) Host Integrity (HI) policies can be used to run the SymHelp log collection tool on client computers without requiring an admin to interrupt the user to run the tool.
+These Symantec Endpoint Protection (SEP) Host Integrity (HI) policies can be used to run the SymHelp log collection tool on Windows computers without requiring an admin to interrupt the user to run the tool.
 
 The SymHelp log files (.sdbz files) are written to a static path, which makes remote log collection simpler. The path is: **C:\WINDOWS\TEMP\symhelphi**
 
 ##  Requirements
 - Symantec Endpoint Protection version 12.1.5 and higher
+- Windows Server or Desktop versions (both 32- and 64-bit)
 
 ##  Setup instructions
 - Download the DAT files by clicking the **Download ZIP** button
