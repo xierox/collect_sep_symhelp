@@ -30,5 +30,5 @@ Before these HI policies can be used to gather more than one SymHelp log, you mu
 - Shortly after the client heartbeats into the SEPM and picks up the new policy, it will reset its state. You can then move the client back into the other group to create another SymHelp log.
 
 ##  Tips
-- Changing the communication mode of the **SymHelp Collect** and **SymHelp Reset** groups to **Pull mode** will speed this process up significantly.
+- Changing the communication mode of the **SymHelp Collect** and **SymHelp Reset** groups to **Push mode** will speed this process up significantly.
 - The HI policy **SymHelp Reset** resets the client by setting *SymHelpExecuted* to *0*. This can be done by hand, if you so desire. It is located at: **HKEY_LOCAL_MACHINE\SOFTWARE\Symantec**
