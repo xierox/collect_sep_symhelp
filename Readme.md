@@ -19,7 +19,7 @@ The SymHelp log files (.sdbz files) are written to a static path, which makes re
 
 ##  Remotely creating a SymHelp log
 - To create a SymHelp log on a SEP client, move the client into the group **My Company\SymHelp Collect**
-- Shortly after the client heartbeats into the SEPM and picks up the new policy, it will create one SymHelp log. The SymHelp log file (.sdbz) is written to: **C:\WINDOWS\TEMP\symhelphi**
+- After the next heartbeat, the client will enable logging, wait 60 minutes, and then run SymHelp. You can generally expect the logs to be ready to collection at **C:\WINDOWS\TEMP\symhelphi** after about 90 minutes.
 
 **Note:** These policies have logic in them to prevent a SymHelp log from being created on every HI check. If you need to gather a second or third SymHelp log, you must reset the SEP client first. See steps below.
 
