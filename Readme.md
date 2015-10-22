@@ -10,9 +10,9 @@ The SymHelp log files (.sdbz files) are written to a static path, which makes re
 - Download the DAT files by clicking the **Download ZIP** button
 - Import both policies into your Symantec Endpoint Protection Manager (SEPM)
     - Login to the SEPM
-    - Click *Policies*
-    - Click *Host Integrity*
-    - Click *Import a Host Integrity Policy*
+    - Click **Policies**
+    - Click **Host Integrity**
+    - Click **Import a Host Integrity Policy**
 - Create the group **My Company\SymHelp Collect**, disable policy inheritance, and apply the policy named **SymHelp Collect** to it
 - Create the group **My Company\SymHelp Reset**, disable policy inheritance, and apply the policy named **SymHelp Reset** to it
 
