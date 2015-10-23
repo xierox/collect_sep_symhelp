@@ -5,7 +5,7 @@ The SymHelp log files (.sdbz files) are written to a static path, which makes re
 
 ##  Requirements
 - Symantec Endpoint Protection version 12.1.5 and higher
-- Windows Server or Desktop versions (both 32- and 64-bit)
+- Microsoft Windows (both 32-bit and 64-bit OSes are supported)
 
 ##  Setup instructions
 - Download the DAT files by clicking the **Download ZIP** button
