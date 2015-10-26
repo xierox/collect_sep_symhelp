@@ -7,7 +7,7 @@ This tool will:
 - Download and run SymHelp utility
 - Disable SEP logging and restart SEP services to disable logging
 
-The SymHelp log file (a .sdbz) is written to a static path, which makes remote log collection simple. The path is: **C:\WINDOWS\TEMP\symhelphi**
+The SymHelp log file (extension .sdbz) is written to a static path, which makes remote log collection simple. The path is: **C:\WINDOWS\TEMP\symhelphi**
 
 #  Requirements
 - Symantec Endpoint Protection version 12.1.5 and higher
