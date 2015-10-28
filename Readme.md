@@ -1,22 +1,22 @@
 # About
-These Symantec Endpoint Protection (SEP) Host Integrity (HI) policies can be used to enable logging and run the SymHelp log collection tool on Windows computers without requiring an admin to interrupt the user to run the tool.
+These Symantec Endpoint Protection (SEP) Host Integrity (HI) policies can be used to enable SEP logging and run the SymHelp log collection tool without interrupting the user of the computer.
 
 This tool will:
 - Enable SEP logging and restart SEP services to enable logging
-- Wait 1 hour (configurable)
-- Download and run SymHelp utility
+- Wait 1 hour (This is configurable.)
+- Download, run, and save SymHelp utility to collect SEP logs
 - Disable SEP logging and restart SEP services to disable logging
 
-The SymHelp log file (extension .sdbz) is written to a static path, which makes remote log collection simple. The path is: **C:\WINDOWS\TEMP\symhelphi**
+The SymHelp log file (extension .sdbz) is written to a static path. This makes remote log collection simple. The path is: **C:\WINDOWS\TEMP\symhelphi**
 
 #  Requirements
 - Symantec Endpoint Protection version 12.1.5 and higher
-- SEP's Tamper Protection feature must be disabled
-- Microsoft Windows (both 32-bit and 64-bit OSes are supported)
+- SEP's Tamper Protection feature must be disabled (see: [TECH192023](http://www.symantec.com/docs/TECH192023))
+- Microsoft Windows (32-bit and 64-bit)
 
 #  How to use this tool
 
-### Step 1: Create special groups. Assign the policies to them.
+### Step 1: Create special groups and assign the policies
 - Download the DAT files by clicking the **Download ZIP** button
 - Import both policies into your Symantec Endpoint Protection Manager (SEPM)
     - Login to the SEPM
@@ -32,7 +32,7 @@ The SymHelp log file (extension .sdbz) is written to a static path, which makes 
     - Apply the policy named **SymHelp Reset** to the group
     - Disable **Tamper Protection** for the group (see: [TECH192023](http://www.symantec.com/docs/TECH192023))
 
-### Step 2: Move the client into the special group.
+### Step 2: Move client(s) into the special group
 - To create a SymHelp log on a SEP client, move the client into the group **My Company\SymHelp Collect**
 - After the next heartbeat, the client will enable logging, wait 60 minutes, and then run SymHelp. You can generally expect the logs to be ready to collection at **C:\WINDOWS\TEMP\symhelphi** after about 90 minutes.
 
