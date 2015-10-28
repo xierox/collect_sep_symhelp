@@ -4,7 +4,7 @@ These Symantec Endpoint Protection (SEP) Host Integrity (HI) policies can be use
 This tool will:
 - Enable SEP logging and restart SEP services to enable logging
 - Wait 1 hour (This is configurable.)
-- Download, run, and save SymHelp utility to collect SEP logs
+- Download and run the SymHelp utility to collect SEP logs
 - Disable SEP logging and restart SEP services to disable logging
 
 The SymHelp log file (extension .sdbz) is written to a static path. This makes remote log collection simple. The path is: **C:\WINDOWS\TEMP\symhelphi**
