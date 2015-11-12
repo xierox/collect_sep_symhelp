@@ -42,5 +42,5 @@ If you need to gather a second or third SymHelp log, you must reset the SEP clie
 - Move the client to the group **My Company\SymHelp Reset**
 - Shortly after the client heartbeats into the SEPM and picks up the new policy, it will reset its state. You can then move the client back into the other group to create another SymHelp log.
 
-##  Tips
+#  Tips
 - Changing the communication mode of the **SymHelp Collect** and **SymHelp Reset** groups to **Push mode** will speed this process up significantly.
