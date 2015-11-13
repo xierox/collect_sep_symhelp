@@ -1,3 +1,4 @@
+------------------------------------------------------------------------
 # About
 These Symantec Endpoint Protection (SEP) Host Integrity (HI) policies can be used to enable SEP logging and run the SymHelp log collection tool without interrupting the user of the computer.
 
@@ -9,6 +10,7 @@ This tool will:
 
 The SymHelp log file (extension .sdbz) is written to a static path. This makes remote log collection simple. The path is: **C:\WINDOWS\TEMP\symhelphi**
 
+------------------------------------------------------------------------
 # Requirements
 - Symantec Endpoint Protection version 12.1.5 and higher
 - SEP's Tamper Protection feature must be disabled (see: [TECH192023](http://www.symantec.com/docs/TECH192023))
@@ -17,6 +19,7 @@ The SymHelp log file (extension .sdbz) is written to a static path. This makes r
     + 64-bit OS: **C:\Program Files (x86)\Symantec\Symantec Endpoint Protection**
 - Microsoft Windows (32-bit or 64-bit)
 
+------------------------------------------------------------------------
 # How to use this tool
 
 ### Step 1: Create special groups and assign the policies
@@ -45,5 +48,6 @@ If you need to gather a second or third SymHelp log, you must reset the SEP clie
 - Move the client to the group **My Company\SymHelp Reset**
 - Shortly after the client heartbeats into the SEPM and picks up the new policy, it will reset its state. You can then move the client back into the other group to create another SymHelp log.
 
+------------------------------------------------------------------------
 #  Tips
 - Changing the communication mode of the **SymHelp Collect** and **SymHelp Reset** groups to **Push mode** will speed this process up significantly.
