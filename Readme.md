@@ -9,7 +9,7 @@ This tool will:
 
 The SymHelp log file (extension .sdbz) is written to a static path. This makes remote log collection simple. The path is: **C:\WINDOWS\TEMP\symhelphi**
 
-#  Requirements
+# Requirements
 - Symantec Endpoint Protection version 12.1.5 and higher
 - SEP's Tamper Protection feature must be disabled (see: [TECH192023](http://www.symantec.com/docs/TECH192023))
 - SEP must be installed to one of the following default paths otherwise the script will not properly restart SEP's services to enable logging. This can be corrected by adjusting the path to Smc.exe in the part of the script which restarts SEP services.
@@ -17,7 +17,7 @@ The SymHelp log file (extension .sdbz) is written to a static path. This makes r
     + 64-bit OS: **C:\Program Files (x86)\Symantec\Symantec Endpoint Protection**
 - Microsoft Windows (32-bit or 64-bit)
 
-#  How to use this tool
+# How to use this tool
 
 ### Step 1: Create special groups and assign the policies
 - Download the DAT files by clicking the **Download ZIP** button
