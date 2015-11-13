@@ -12,7 +12,10 @@ The SymHelp log file (extension .sdbz) is written to a static path. This makes r
 #  Requirements
 - Symantec Endpoint Protection version 12.1.5 and higher
 - SEP's Tamper Protection feature must be disabled (see: [TECH192023](http://www.symantec.com/docs/TECH192023))
-- Microsoft Windows (32-bit and 64-bit)
+- SEP must be installed to one of the following default paths otherwise the script will not properly restart SEP's services to enable logging. This can be corrected by adjusting the path to Smc.exe in the part of the script which restarts SEP services.
+    + 32-bit OS: **C:\Program Files\Symantec\Symantec Endpoint Protection**
+    + 64-bit OS: **C:\Program Files (x86)\Symantec\Symantec Endpoint Protection**
+- Microsoft Windows (32-bit or 64-bit)
 
 #  How to use this tool
 
